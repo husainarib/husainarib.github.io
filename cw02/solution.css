@@ -1,0 +1,38 @@
+header h1,
+header h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+aside {
+  flex-basis: 33%;
+}
+
+section {
+  flex-basis: 67%;
+}
+
+img {
+  float: right;
+  width: 200px;
+}
+
+#clear {
+  clear: both;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 5px;
+}
+
+.column {
+  padding: 2em;
+  margin: 2em;
+  border: 4px dashed red;
+}
