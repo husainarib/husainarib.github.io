@@ -29,7 +29,7 @@ include_once 'common.php';
             $candidate = explode(",", $line);
             if ($candidate[0] !== $user[0] && isMatch($user, $candidate)) {
                 echo "<div class='match'>";
-                echo "<p><img src='user.png' alt='User image'>{$candidate[0]}</p>";
+                echo "<p><img src='user.png'>{$candidate[0]}</p>";
                 echo "<ul>";
                 echo "<li><strong>gender:</strong> {$candidate[1]}</li>";
                 echo "<li><strong>age:</strong> {$candidate[2]}</li>";
@@ -42,7 +42,14 @@ include_once 'common.php';
     }
     ?>
 
-    <p><a href="index.php"><img src="back.png" alt="Back to front page"> Back to front page</a></p>
+    <p>This page is for single nerds to meet and date each other! Type in your personal information and wait for the
+        nerdly luv to begin! Thank you for using our site.</p>
+    <p>Results and page (C) Copyright NerdLuv Inc.</p>
+    
+    <div id="bannerarea">
+        <a href="index.php">Back to front page</a>
+    </div>
+
 </body>
 
 </html>

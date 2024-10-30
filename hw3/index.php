@@ -18,10 +18,10 @@
 
     <ul>
         <li>
-            <a href="signup.php"><img src="signup.png" alt="Sign up icon"> Sign up for a new account</a>
+            <a href="signup.php"> Sign up for a new account</a>
         </li>
         <li>
-            <a href="matches.php"><img src="matches.png" alt="Matches icon"> Check your matches</a>
+            <a href="matches.php"> Check your matches</a>
         </li>
     </ul>
 
@@ -29,14 +29,10 @@
         nerdly luv to begin! Thank you for using our site.</p>
     <p>Results and page (C) Copyright NerdLuv Inc.</p>
 
-    <p>
-        <a href="index.php"><img src="back.png" alt="Back to front page"> Back to front page</a>
-    </p>
-
     <div id="w3c">
         <p>
-            <img src="w3c-html5.png" alt="HTML5 compliant">
-            <img src="w3c-css.png" alt="CSS compliant">
+            <img src="w3c-html5.png">
+            <img src="w3c-css.png">
         </p>
     </div>
 </body>

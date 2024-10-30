@@ -35,7 +35,7 @@ file_put_contents("singles.txt", $user_data, FILE_APPEND);
     <p>Welcome to NerdLuv, <?= htmlspecialchars($name) ?>!<br>
         Now <a href='matches.php'>log in to see your matches!</a></p>
 
-    <p><a href="index.php"><img src="back.png" alt="Back to front page"> Back to front page</a></p>
+    <p><a href="index.php"> Back to front page</a></p>
 
     <div id="w3c">
         <p>
