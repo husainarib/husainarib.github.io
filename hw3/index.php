@@ -18,12 +18,20 @@
 
     <ul>
         <li>
+            <a href="signup.php"><img src="signup.png" alt="Sign up icon"> Sign up for a new account</a>
+        </li>
+        <li>
             <a href="matches.php"><img src="matches.png" alt="Matches icon"> Check your matches</a>
         </li>
     </ul>
 
-    <p>This page is for single nerds to meet and date each other! Type in your personal information and wait for the nerdly luv to begin! Thank you for using our site.</p>
+    <p>This page is for single nerds to meet and date each other! Type in your personal information and wait for the
+        nerdly luv to begin! Thank you for using our site.</p>
     <p>Results and page (C) Copyright NerdLuv Inc.</p>
+
+    <p>
+        <a href="index.php"><img src="back.png" alt="Back to front page"> Back to front page</a>
+    </p>
 
     <div id="w3c">
         <p>
