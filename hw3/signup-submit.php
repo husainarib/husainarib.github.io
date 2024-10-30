@@ -1,4 +1,5 @@
 <?php
+include 'common.php';
 // Capture form data
 $name = $_POST['name'];
 $gender = $_POST['gender'];
@@ -7,6 +8,11 @@ $personality = $_POST['personality'];
 $os = $_POST['os'];
 $min_age = $_POST['min_age'];
 $max_age = $_POST['max_age'];
+
+// Extra Feature 1 : Robust page with form validation
+if (!validateSignupData($name, $age, $gender, $personality, $os, $min_age, $max_age)) {
+    displayError("Invalid input data. Please ensure all fields are correctly filled.");
+}
 
 // Format data as a single line for storage
 $user_data = "$name,$gender,$age,$personality,$os,$min_age,$max_age\n";

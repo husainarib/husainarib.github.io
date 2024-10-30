@@ -53,3 +53,58 @@ function isMatch($user, $candidate)
 
     return $matchFound;
 }
+
+// Extra Feature #1: Robust page with form validation
+function validateName($name)
+{
+    return !empty($name);
+}
+
+function validateAge($age)
+{
+    return is_numeric($age) && $age >= 0 && $age <= 99;
+}
+
+function validateGender($gender)
+{
+    return in_array($gender, ["M", "F"]);
+}
+
+function validatePersonality($personality)
+{
+    return preg_match("/^[IE][NS][FT][JP]$/", $personality);
+}
+
+function validateOS($os)
+{
+    return in_array($os, ["Windows", "Mac OS X", "Linux"]);
+}
+
+function validateAgeRange($min_age, $max_age)
+{
+    return is_numeric($min_age) && is_numeric($max_age) &&
+        $min_age >= 0 && $min_age <= 99 &&
+        $max_age >= 0 && $max_age <= 99 &&
+        $min_age <= $max_age;
+}
+
+function validateSignupData($name, $age, $gender, $personality, $os, $min_age, $max_age)
+{
+    return validateName($name) &&
+        validateAge($age) &&
+        validateGender($gender) &&
+        validatePersonality($personality) &&
+        validateOS($os) &&
+        validateAgeRange($min_age, $max_age);
+}
+
+function validateMatchData($name)
+{
+    return validateName($name);
+}
+
+function displayError($message)
+{
+    echo "<p>Error: $message</p>";
+    exit;
+}

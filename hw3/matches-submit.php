@@ -19,6 +19,10 @@ include_once 'common.php';
 
     <?php
     $name = $_GET["name"];
+    // Extra Feature 1 : Robust page with form validation
+    if (!validateMatchData($name)) {
+        displayError("Invalid name. Please enter a valid name.");
+    }
     $user = getUserData($name);
 
     if ($user === null) {
@@ -45,7 +49,7 @@ include_once 'common.php';
     <p>This page is for single nerds to meet and date each other! Type in your personal information and wait for the
         nerdly luv to begin! Thank you for using our site.</p>
     <p>Results and page (C) Copyright NerdLuv Inc.</p>
-    
+
     <div id="bannerarea">
         <a href="index.php">Back to front page</a>
     </div>

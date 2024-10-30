@@ -54,7 +54,7 @@
     <p>Results and page (C) Copyright NerdLuv Inc.</p>
 
     <p>
-        <a href="index.php"><img src="back.png" alt="Back to front page"> Back to front page</a>
+        <a href="index.php">Back to front page</a>
     </p>
 
     <div id="w3c">
