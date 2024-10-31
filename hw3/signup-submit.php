@@ -9,9 +9,10 @@ $os = $_POST['os'];
 $min_age = $_POST['min_age'];
 $max_age = $_POST['max_age'];
 
-// Extra Feature 1 : Robust page with form validation
+// Extra Feature 1: Robust page with form validation
 if (!validateSignupData($name, $age, $gender, $personality, $os, $min_age, $max_age)) {
-    displayError("Invalid input data. Please ensure all fields are correctly filled.");
+    displayError("Invalid input data. Please ensure all fields are correctly filled. <a href='signup.php'>Go back to sign up</a>");
+    exit(); // Stop further execution if there is an error
 }
 
 // Format data as a single line for storage
@@ -45,8 +46,12 @@ file_put_contents("singles.txt", $user_data, FILE_APPEND);
 
     <div id="w3c">
         <p>
-            <img src="w3c-html5.png" alt="HTML5 compliant">
-            <img src="w3c-css.png" alt="CSS compliant">
+            <img style="border:0;width:88px;height:31px" src="w3c-html5.png">s
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
         </p>
     </div>
 </body>

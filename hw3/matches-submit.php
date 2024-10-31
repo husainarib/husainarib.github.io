@@ -54,6 +54,17 @@ include_once 'common.php';
         <a href="index.php">Back to front page</a>
     </div>
 
+    <div id="w3c">
+        <p>
+            <img style="border:0;width:88px;height:31px" src="w3c-html5.png">s
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+    </div>
+
 </body>
 
 </html>

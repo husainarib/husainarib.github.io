@@ -23,7 +23,7 @@
             <label class="left"><strong>Gender:</strong></label>
             <input type="radio" id="male" name="gender" value="M">
             <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="F" checked>
+            <input type="radio" id="female" name="gender" value="F">
             <label for="female">Female</label><br>
 
             <label for="age" class="left"><strong>Age:</strong></label>
@@ -59,8 +59,12 @@
 
     <div id="w3c">
         <p>
-            <img src="w3c-html5.png" alt="HTML5 compliant">
-            <img src="w3c-css.png" alt="CSS compliant">
+            <img style="border:0;width:88px;height:31px" src="w3c-html5.png">s
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
         </p>
     </div>
 </body>

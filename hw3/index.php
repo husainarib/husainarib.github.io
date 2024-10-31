@@ -31,8 +31,12 @@
 
     <div id="w3c">
         <p>
-            <img src="w3c-html5.png">
-            <img src="w3c-css.png">
+            <img style="border:0;width:88px;height:31px" src="w3c-html5.png">s
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
         </p>
     </div>
 </body>
