@@ -21,7 +21,7 @@ include_once 'common.php';
     $name = $_GET["name"];
     // Extra Feature 1 : Robust page with form validation
     if (!validateMatchData($name)) {
-        displayError("Invalid name. Please enter a valid name.");
+        displayError("Invalid name. Please enter a valid name.<a href='matches.php'>Go back to sign up</a>");
     }
     $user = getUserData($name);
 
