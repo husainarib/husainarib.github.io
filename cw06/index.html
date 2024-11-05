@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -11,7 +9,7 @@
       <div class="form-group">
         <label for="userID">ID:</label>
         <div class="input-container">
-          <span class="error"></span>
+          <span id="idError" class="error"></span>
           <input type="text" id="userID" />
         </div>
       </div>
@@ -19,7 +17,7 @@
       <div class="form-group">
         <label for="firstName">First Name:</label>
         <div class="input-container">
-          <span class="error"></span>
+          <span id="firstNameError" class="error"></span>
           <input type="text" id="firstName" />
         </div>
       </div>
@@ -27,13 +25,15 @@
       <div class="form-group">
         <label for="lastName">Last Name:</label>
         <div class="input-container">
-          <span class="error"></span>
+          <span id="lastNameError" class="error"></span>
           <input type="text" id="lastName" />
         </div>
       </div>
 
-      <button type="button">Add</button>
+      <button type="button" onclick="validateForm()">Add</button>
     </form>
     <div id="result"></div>
+
+    <script src="formValidation.js"></script>
   </body>
 </html>
