@@ -29,6 +29,19 @@ function validateForm() {
   if (errors.length > 0) {
     alert(errors.join("\n"));
   } else {
-    // TODO ADD DISPLAY FORM INPUT
+    displayResults(id, firstName, lastName);
   }
+}
+
+// Display the results of the form in an alert box
+function displayResults(id, firstName, lastName) {
+  document.getElementById("result").innerHTML = `
+        <p>UserID: ${id}</p>
+        <p>First Name: ${firstName}</p>
+        <p>Last Name: ${lastName}</p>
+    `;
+
+  document.getElementById("userID").value = "";
+  document.getElementById("firstName").value = "";
+  document.getElementById("lastName").value = "";
 }
