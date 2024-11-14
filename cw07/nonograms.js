@@ -1,22 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Select all elements with the class 'box'
   const tiles = document.querySelectorAll(".box");
+  let isDragging = false;
+  let initialFillState = null;
 
-  // Attach a click event listener to each tile
+  // Toggle fill for tiles on click
   tiles.forEach((tile) => {
-    tile.addEventListener("click", function () {
-      tile.classList.toggle("filled");
+    tile.addEventListener("mousedown", function (event) {
+      event.preventDefault();
+
+      isDragging = true;
+      initialFillState = tile.classList.contains("filled");
+
+      // Toggle the clicked tile's fill state
+      if (initialFillState) {
+        tile.classList.remove("filled");
+      } else {
+        tile.classList.add("filled");
+      }
+    });
+    // Check if dragging mode is active
+    tile.addEventListener("mouseenter", function () {
+      if (isDragging) {
+        if (initialFillState) {
+          tile.classList.remove("filled");
+        } else {
+          tile.classList.add("filled");
+        }
+      }
     });
   });
 
-  const clearButton = document.getElementById("clear-button");
+  // Stop drag action on mouse up or out of box
+  document.addEventListener("mouseup", function () {
+    isDragging = false;
+  });
 
-  // Attach a click event listener to the Clear button
-  clearButton.addEventListener("click", function () {
-    if (confirm("Are you sure you want to clear all tiles?")) {
-      tiles.forEach((tile) => {
-        tile.classList.remove("filled");
-      });
+  document.addEventListener("mousedown", function (event) {
+    if (!event.target.classList.contains("box")) {
+      isDragging = false;
     }
   });
 });
