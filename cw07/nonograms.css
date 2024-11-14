@@ -56,7 +56,7 @@ h1 {
 }
 
 .crossed-out {
-  background-image: url("img/x.png");
+  background-image: url("x.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }

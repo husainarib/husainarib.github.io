@@ -11,18 +11,23 @@ document.addEventListener("DOMContentLoaded", function () {
       isDragging = true;
       initialFillState = tile.classList.contains("filled");
 
-      // Toggle the clicked tile's fill state
+      // Toggle between filled and crossed-out states
       if (initialFillState) {
         tile.classList.remove("filled");
+        tile.classList.add("crossed-out");
+      } else if (tile.classList.contains("crossed-out")) {
+        tile.classList.remove("crossed-out");
       } else {
         tile.classList.add("filled");
       }
     });
+
     // Check if dragging mode is active
     tile.addEventListener("mouseenter", function () {
       if (isDragging) {
         if (initialFillState) {
           tile.classList.remove("filled");
+          tile.classList.remove("crossed-out");
         } else {
           tile.classList.add("filled");
         }
@@ -47,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (confirm("Are you sure you want to clear all tiles?")) {
       tiles.forEach((tile) => {
         tile.classList.remove("filled");
+        tile.classList.remove("crossed-out");
       });
     }
   });
