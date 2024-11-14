@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Attach a click event listener to each tile
   tiles.forEach((tile) => {
     tile.addEventListener("click", function () {
-      alert("You clicked a tile!");
+      tile.classList.add("filled");
     });
   });
 });
