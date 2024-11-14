@@ -40,4 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
       isDragging = false;
     }
   });
+
+  // Clear button logic
+  const clearButton = document.getElementById("clear-button");
+  clearButton.addEventListener("click", function () {
+    if (confirm("Are you sure you want to clear all tiles?")) {
+      tiles.forEach((tile) => {
+        tile.classList.remove("filled");
+      });
+    }
+  });
 });
