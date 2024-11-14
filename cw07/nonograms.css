@@ -14,23 +14,32 @@ h1 {
 }
 
 .box:hover {
-  box-shadow: 0px 0px 3px 3px #111;
+  box-shadow: 0px 0px 2px 2px #111111;
   cursor: pointer;
 }
 
-.box, .col-num-box, .row-num-box {
+.box,
+.col-num-box,
+.row-num-box {
   line-height: 24pt;
 }
 
-.box, .col-num-box, #empty-square, #left-nums, #top-nums {
+.box,
+.col-num-box,
+#empty-square,
+#left-nums,
+#top-nums {
   float: left;
 }
 
-.clear, #left-nums, #puzzle {
+.clear,
+#left-nums,
+#puzzle {
   clear: both;
 }
 
-.col-num-box, #top-nums {
+.col-num-box,
+#top-nums {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
@@ -53,7 +62,7 @@ h1 {
 }
 
 .filled {
-  background-color: #000;   
+  background-color: #000;
 }
 
 #grid {
@@ -66,16 +75,19 @@ h1 {
   display: inline-block;
 }
 
-.left-row, .row-num-box {
+.left-row,
+.row-num-box {
   float: right;
 }
 
-#left-nums, .left-row {
+#left-nums,
+.left-row {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 
-#left-nums, #empty-square {
+#left-nums,
+#empty-square {
   border-left: 3px solid #000;
 }
 
@@ -99,20 +111,27 @@ h1 {
   border-left: 2px solid black;
 }
 
-.fifteen .box, .fifteen .col-num-box, .fifteen .row-num-box {
+.fifteen .box,
+.fifteen .col-num-box,
+.fifteen .row-num-box {
   width: 30px;
   height: 30px;
 }
 
-.fifteen #left-nums, .fifteen .left-row {
+.fifteen #left-nums,
+.fifteen .left-row {
   width: 100px;
 }
 
-.five #left-nums, .five .left-row, .five #empty-square {
+.five #left-nums,
+.five .left-row,
+.five #empty-square {
   width: 140px;
 }
 
-.five .box, .five .col-num-box, .five .row-num-box {
+.five .box,
+.five .col-num-box,
+.five .row-num-box {
   width: 70px;
   height: 70px;
   line-height: 70px;
@@ -130,11 +149,14 @@ h1 {
   font-size: 16pt;
 }
 
-.fifteen, .twenty {
+.fifteen,
+.twenty {
   font-size: 12pt;
 }
 
-.ten #left-nums, .ten .left-row, .ten #empty-square {
+.ten #left-nums,
+.ten .left-row,
+.ten #empty-square {
   width: 120px;
 }
 
@@ -142,7 +164,9 @@ h1 {
   height: 120px;
 }
 
-.ten .box, .ten .col-num-box, .ten .row-num-box {
+.ten .box,
+.ten .col-num-box,
+.ten .row-num-box {
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -153,11 +177,15 @@ h1 {
   width: 100px;
 }
 
-.twenty #left-nums, .twenty .left-row, .twenty #empty-square {
+.twenty #left-nums,
+.twenty .left-row,
+.twenty #empty-square {
   width: 80px;
 }
 
-.twenty .box, .twenty .col-num-box, .twenty .row-num-box {
+.twenty .box,
+.twenty .col-num-box,
+.twenty .row-num-box {
   width: 20px;
   height: 20px;
   line-height: 20px;
@@ -167,11 +195,15 @@ h1 {
   height: 80px;
 }
 
-.twenty-five #left-nums, .twenty-five .left-row, .twenty-five #empty-square {
+.twenty-five #left-nums,
+.twenty-five .left-row,
+.twenty-five #empty-square {
   width: 90px;
 }
 
-.twenty-five .box, .twenty-five .col-num-box, .twenty-five .row-num-box {
+.twenty-five .box,
+.twenty-five .col-num-box,
+.twenty-five .row-num-box {
   width: 15px;
   height: 15px;
   line-height: 15px;
