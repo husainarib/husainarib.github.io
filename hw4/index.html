@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Guess the Number Game!</h1>
+      <p id="clock">Current Time: --:--:--</p>
+      <p id="instructions">
+        I have picked a secret number between 1 and 100. Can you guess it?
+      </p>
+      <input
+        type="number"
+        id="guessInput"
+        placeholder="Enter your guess"
+        min="1"
+        max="100"
+      />
+      <button id="guessButton">Guess</button>
+      <p id="feedback"></p>
+      <audio id="winSound" src="win.mp3"></audio>
+      <audio id="guessSound" src="guess.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
