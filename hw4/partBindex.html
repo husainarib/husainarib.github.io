@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="partbstyles.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Memory Match Game</h1>
+
+      <div id="guidelines">
+        <h3>How to Play:</h3>
+        <ol>
+          <li>Select a difficulty level (8, 10, or 12 cards)</li>
+          <li>You'll have a brief time to memorize card locations</li>
+          <li>Cards will be hidden after memorization time</li>
+          <li>Click cards to reveal and match pairs</li>
+          <li>Complete the game before time runs out!</li>
+        </ol>
+      </div>
+
+      <div id="difficulty-selection">
+        <button onclick="startGame(8)">8 Cards (Easy)</button>
+        <button onclick="startGame(10)">10 Cards (Medium)</button>
+        <button onclick="startGame(12)">12 Cards (Hard)</button>
+      </div>
+
+      <div id="timer"></div>
+      <div id="game-board"></div>
+      <div id="result"></div>
+    </div>
+
+    <script src="partbscript.js"></script>
+  </body>
+</html>
